@@ -53,14 +53,11 @@ a:active {
 }
 #moto1{
     position : absolute;
-     ;
+     
     width: 120px;
     height: 120px;
-   /* border: 2px solid black;*/
-    border-radius: 10px;
-    /*box-shadow: 5px 5px 5px black;*/
-    background-color: auto
-    ;
+  
+    
     padding: 5px;
     margin: auto;
 
@@ -76,11 +73,8 @@ a:active {
      ;
     width: 120px;
     height: 120px;
-    /*border: 2px solid black;*/
-    border-radius: 10px;
-   /* box-shadow: 5px 5px 5px black;*/
-    background-color: auto
-    ;
+   
+    
     padding: 5px;
     margin: auto;
   
