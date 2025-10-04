@@ -4,7 +4,7 @@ body{
 }
 
 .menu{
-    background-color: #999;
+    background-color: #c7bbab;
     position: sticky;
     top: 0px;
     margin: auto;
@@ -53,10 +53,10 @@ a:active {
 }
 #moto1{
     position : absolute;
-     
+
     width: 120px;
     height: 120px;
-  
+
     
     padding: 5px;
     margin: auto;
@@ -70,14 +70,13 @@ a:active {
 }
 #moto2{
     position : absolute;
-     ;
+    
     width: 120px;
     height: 120px;
-   
+
     
     padding: 5px;
     margin: auto;
-  
     left: 0;
     margin-left: 10px;
     right: 0;;
@@ -85,4 +84,53 @@ a:active {
     bottom: 2px;
 
 
+}
+
+.fondoImg{
+    background-image:url(https://bxrepsol.s3.eu-west-1.amazonaws.com/static/2023/02/24101332/bikeshed-motorcycle-club.png);
+    position: fixed;
+    width: 100%;
+    height: 600px;
+    clip-path: polygon(100% 0, 99% 80%, 50% 100%, 0 80%, 0 0);
+    z-index: -1;
+
+}
+
+.contenedor{
+    width: 98%;
+    height: 400px;
+    margin: 10px;
+
+}
+.cuadrado{
+    margin-bottom: 20px;
+    border: 1px solid rgb(177, 30, 30);
+    width: 100%;
+    height: 200px;
+    background-color: rgb(164, 164, 196);
+    border-radius: 15px;
+    position: relative;
+}
+img{
+    border-radius: 15px;
+    float: left;
+    width: 25%;
+    height:200px;
+    margin-right: 15px;
+}
+
+p{
+    
+    position: absolute;
+    left: 26%;
+    
+}
+
+.informacion1{
+    width: 73%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    justify-content: center;
+    
 }
