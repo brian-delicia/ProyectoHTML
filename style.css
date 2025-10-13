@@ -74,8 +74,6 @@ h2{
     
     width: 120px;
     height: 120px;
-
-    
     padding: 5px;
     margin: auto;
     left: 0;
@@ -83,8 +81,6 @@ h2{
     right: 0;;
     top: 0px;
     bottom: 2px;
-
-
 }
 
 .fondoImg{
@@ -96,12 +92,26 @@ h2{
     z-index: -1;
 
 }
+.fondoSN{
+    background :black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+}
+
+.fondoContacto{
+    background-color: #b9a38d;
+    width: 100%;
+    height: 600px;
+    z-index: -2;
+    position: fixed;
+}
 
 .contenedor{
     width: 98%;
     height: 400px;
     margin: 10px;
-
 }
 .cuadrado{
     overflow: auto;
@@ -113,7 +123,7 @@ h2{
     border-radius: 15px;
     position: relative;
 }
-img{
+.cuadrado > img{
     border-radius: 15px;
     float: left;
     width: 25%;
@@ -122,37 +132,24 @@ img{
 }
 
 
-   
+
 h5{
-   display: flex;
-   font-family: sans-serif;
-
-
-
+    display: flex;
+    font-family: sans-serif;
     margin-bottom: 2px;
-  position: relative;
-
-  
- 
-  
-
-
-
-
+    position: relative;
 }
     
 
 
-.informacion1{
-    
+.informacion1{  
     font-family: sans-serif;
     width: 70%;
     display: flex;
     flex-direction: row;
-   
     justify-content: center;
     align-items: center;
-      position: absolute;
+    position: absolute;
     left: 26%;
 }
 .botonContacto{
@@ -170,11 +167,89 @@ h5{
 .botonContacto:hover{
     background-color: red;
 }
-.fondoSN{
-    background :black;
+
+.contenedorFormulario{
+    position: relative;
+    
     width: 100%;
-    height: 100%;
-  z-index: -1;
-  position: fixed;
-   
+    height: 400px;
+}
+
+.cajaContacto{
+    position: absolute;
+    bottom: 0;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px;
+    border-radius: 15px;
+}
+
+.cajaContacto button{
+    width: 40%;
+    height: 40px;
+    border: none;
+}
+
+.cajaContacto button:hover{
+    background-color: rgb(146, 172, 146);
+    
+}
+.cajaContacto input,textarea{
+    background-color: #b9a38d;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+}
+
+.cajaInformacion{
+    position: absolute;
+    bottom: 0;
+    gap: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    width: 40%;
+    height: 350px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px;
+    border-radius: 15px;
+    
+}
+.cajaInformacion h2{
+    position: relative;
+    right: 30px;
+    margin-bottom: 0;
+}
+
+.formulario{
+display: flex;
+flex-direction: column;
+width: 90%;
+    gap: 10px;
+}
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+li img{
+    position: absolute;
+    top: 14px;
+    left: -30px;
+    
 }
