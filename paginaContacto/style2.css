@@ -26,6 +26,7 @@ body{
     padding: 5px;
     background-color:rgb(90, 97, 97);
     width: 100%;
+    z-index: 999;
 }
 .menu .imagenMenu{
     display: flex;
@@ -70,3 +71,119 @@ body{
     color: white ;
  }
 
+
+ /* formulario*/
+ .padre{
+    position: relative;
+    
+   height: 500px;
+    width: 100%;
+border: 3px solid rgb(12, 12, 12);
+background-color: grey
+
+
+ }
+.formulario{
+    position: absolute;
+    right: 10%; 
+    top: 10%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+   flex-direction: column ;
+border: 1px solid white;
+box-shadow: 3px 3px 10px white;
+color: white;
+border-radius: 10%;
+width: 30%;
+height: auto;
+padding: 20px;
+background: rgb(56, 55, 55);
+
+}
+.botones{
+
+  
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.botones button{
+ border: 1px solid white;
+
+ width: 40%;
+ height: 20px;
+ color: white;
+ background-color: grey;
+
+}
+.botones button:hover{
+
+    background-color : black;
+
+
+}
+input, textarea{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: rgb(56, 55, 55);
+    outline: none;
+    width: 50%;
+}
+.datos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    flex-direction: column;
+  
+    position:absolute;
+    left: 10%;
+    top: 10%;
+    width: 50%;
+    height: 75%;
+    
+
+}
+.item{
+
+position: relative;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+
+}
+.item img{
+
+    position: absolute;
+    left: 10%;
+  
+   
+}
+.finalpag{
+
+    width: 100%;
+    height: 400px;
+    background-color: black;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
