@@ -10,8 +10,8 @@ list-style: none;
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    background-color: rgb(153, 142, 129);
 
-   
 }
 
 
@@ -26,6 +26,7 @@ body{
     padding: 5px;
     background-color:rgb(90, 97, 97);
     width: 100%;
+    z-index: 999;
 }
 .menu .imagenMenu{
     display: flex;
@@ -69,4 +70,70 @@ body{
  .navegacion a:visited{
     color: white ;
  }
+
+    .padre{
+    
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    
+}
+
+.img-local img{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 22%;
+    z-index: 996;
+}
+.contenedor-venta{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height:100%;
+    gap: 20px;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px;
+    width: 28%;
+    height: 420px;
+    background-color: rgb(144, 144, 170);
+    border: 1px solid black;
+
+}
+.item:hover{
+    background-color: azure;
+    box-shadow: 5px 5px 10px rgb(38, 44, 44);
+}
+.item img{
+
+    padding-top: 15px;
+    width: 100%;
+    height: 200px;
+
+}
+
+.item p,h2 {
+    margin: 7px;
+}
+.item a{
+    background-color: green;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+.item a:hover{
+    background-color: rgb(109, 179, 109);
+
+}
+
+
 

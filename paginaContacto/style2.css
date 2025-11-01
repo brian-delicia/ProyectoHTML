@@ -76,7 +76,7 @@ body{
  .padre{
     position: relative;
     
-   height: 500px;
+   height: 600px;
     width: 100%;
 border: 3px solid rgb(12, 12, 12);
 background-color: grey
@@ -133,48 +133,53 @@ input, textarea{
     width: 50%;
 }
 .datos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-  
     position:absolute;
     left: 10%;
     top: 10%;
     width: 50%;
-    height: 75%;
+    height: 45%;
     
 
 }
 .item{
 
 position: relative;
-width: 100%;
-height: 100%;
+width: 80%;
+height: 50%;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 20px;
 
-
 }
 .item img{
 
     position: absolute;
-    left: 10%;
-  
-   
+    left: 3%;
+
 }
 .finalpag{
 
     width: 100%;
     height: 400px;
     background-color: black;
-   
+
 }
 
-
+#validaciones{
+    position: absolute;
+    border: 1px solid black;
+    width: 40%;
+    height: 20%;
+    bottom: 25%;
+    left: 10%;
+    background-color: white;
+}
 
 
 

@@ -31,16 +31,16 @@
 </div>
     </header>
     <div class="padre">
-        <form class="formulario"  method="get">
+        <form class="formulario"  method="get" onsubmit="return validacionFormulario()">
             
                 <h1 id="titulo">Contacto</h1>
          
             <label for="nombre">Nombre:</label> 
-            <input type="text" name=" nombre">
+            <input type="text" name=" nombre" id="nombre">
         
               
             <label for="apellido">Apellido:</label>
-            <input type="text" name ="apellido">
+            <input type="text" name ="apellido" id="apellido">
             
           
             <label for="correo">Correo:</label>
@@ -48,7 +48,7 @@
          
       
                 <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" ></textarea>
+                <textarea name="mensaje" id="mensaje" ></textarea>
 
 
         
@@ -69,18 +69,20 @@
         </form>
         <div class="datos">
             <div class="item">
-          <p><img src="/imagenes/ubicacion.ico" alt="mapa" height="30px" width="30px"> Direccion: Juan Agustin Garcia 1330, La Paternal, Caba. </p>
+          <p><img src="/imagenes/ubicacion.ico" alt="mapa" height="30px" width="30px">  Juan Agustin Garcia 1330, La Paternal, Caba. </p>
           <p> <img src="/imagenes/whasapp.ico" alt="wsp" height="30px" width="30px">Telefono: 011-4581-4142</p>
           <p> <img src="/imagenes/facebook.ico" alt="face" height="30px" width="30px">FaceBook: LosPibesDeLasMotos</p>
           <p><img src="/imagenes/gmail.ico" alt="gmail" height="30px" width="30px">Correo: UnoMotos@hotmail.com</p>
                 </div>
 
         </div>
-        
+        <div id="validaciones">
+            
+        </div>
 
         
     </div>
    
- 
+    <script src="/paginaContacto/scriopt2.js"></script>
 </body>
 </html>
