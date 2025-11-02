@@ -78,12 +78,14 @@ body{
     position: absolute;
     
 }
-
+.img-local{
+    width: 100%;
+}
 .img-local img{
-    width: 600px;
+    width: 90%;
     height: 400px;
     position: absolute;
-    left: 22%;
+    left: 5%;
     z-index: 996;
 }
 .contenedor-venta{
