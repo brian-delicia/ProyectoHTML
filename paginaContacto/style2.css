@@ -83,7 +83,7 @@ background-color: grey
 
 
  }
-.formulario{
+#formulario{
     position: absolute;
     right: 10%; 
     top: 10%;
@@ -104,7 +104,7 @@ background: rgb(56, 55, 55);
 }
 .botones{
 
-  
+
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -126,11 +126,12 @@ background: rgb(56, 55, 55);
 
 }
 input, textarea{
-    border: none;
+   
     border-bottom: 1px solid white;
     background-color: rgb(56, 55, 55);
     outline: none;
     width: 50%;
+    color: white;
 }
 .datos{
     display: flex;
