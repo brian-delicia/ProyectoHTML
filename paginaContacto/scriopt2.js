@@ -11,21 +11,21 @@ const validaciones = document.getElementById('validaciones');
 form.addEventListener("submit" , e=> {
 
     e.preventDefault();
-    let warnig = "";
+    let datos = "";
     let regexEmail=/^\w+.*@(gmail|hotmail|yahoo)(\.com|\.ar|\.es|\.edu){1,2}$/i;
     let regextel= /^\d{10}$/
     let entrar = false;
     validaciones.innerHTML= "";
-     if(nombre.value.length<5)  {
-        warnig+= "Nombre erroneo <br> " 
+     if(nombre.value.length<4)  {
+        datos+= "Nombre erroneo <br> " 
         nombre.style.backgroundColor= 'red';
     entrar= true
      }else{
             nombre.style.backgroundColor= 'green';
       
      }
-    if(apellido.value.length<5){ 
-        warnig+= "Apellido erroneo <br> " 
+    if(apellido.value.length<4){ 
+        datos+= "Apellido erroneo <br> " 
     entrar= true
      apellido.style.backgroundColor= 'red';
 }else{
@@ -33,7 +33,7 @@ form.addEventListener("submit" , e=> {
       
      }
      if(!regexEmail.test(gmail.value)){
-        warnig+= " El gmail es incorrecto <br>"
+        datos+= " El gmail es incorrecto <br>"
         entrar= true
          gmail.style.backgroundColor= 'red';
 
@@ -42,7 +42,7 @@ form.addEventListener("submit" , e=> {
       
      }
      if(!regextel.test(tel.value)){
-        warnig+= "El telefono es incorrecto <br>"
+        datos+= "El telefono es incorrecto <br>"
          entrar= true
           tel.style.backgroundColor= 'red';
 }else{
@@ -50,7 +50,7 @@ form.addEventListener("submit" , e=> {
       
      }
     if(entrar){
-        validaciones.innerHTML= warnig;
+        validaciones.innerHTML= datos;
 
     }else{
        
