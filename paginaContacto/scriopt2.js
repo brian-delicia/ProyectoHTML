@@ -53,25 +53,18 @@ form.addEventListener("submit" , e=> {
         validaciones.innerHTML= datos;
 
     }else{
-       
-        validaciones.innerHTML= "Nombre: "+ nombre.value + " <br> " +
-        "Apellido: " + apellido.value + "<br> "+
-        "Gmail: "+ gmail.value + "<br> "+
-        "Mensaje: "+ mensaje.value + "<br> "+
-        "Telefono: "+ tel.value + "<br> "
+      
+        const error =document.createElement('div');
+        error.className= 'error-box';
+
+        error.innerHTML = "Nombre: "+ nombre.value + '<br>' +
+        "Apellido: " + apellido.value + '<br>' +
+        "Gmail: "+ gmail.value + '<br>' +
+        "Mensaje: "+ mensaje.value + '<br>' +
+        "Telefono: "+ tel.value;
+
+        validaciones.appendChild(error);
     }
-
- 
-   
-
-
-
-
-
-
-
-
-
 } )
 
 
