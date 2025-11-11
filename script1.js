@@ -1,4 +1,4 @@
-const imagenes =['/imagenes/moto-Carrusel1.png','/imagenes/moto-Carrusel2.png','/imagenes/moto-Carrusel3.png','/imagenes/moto-Carrusel4.png'];
+const imagenes =['./imagenes/moto-Carrusel1.png','./imagenes/moto-Carrusel2.png','./imagenes/moto-Carrusel3.png','./imagenes/moto-Carrusel4.png'];
 
 let indice= 0;
 
